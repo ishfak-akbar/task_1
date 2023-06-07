@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+}
+#header{
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    background:linear-gradient(to bottom ,black,transparent);
+    transition: background 0.4s;
+}
+#header.active{
+    background:linear-gradient(to bottom ,black,transparent);
+}
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+    
+}
+
+#header .container{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between
+}
+.logo{
+    text-decoration: none;
+    font-size: 25px;
+    color : white
+}
+.logo img{
+    width: 65px;
+}
+#navbar{
+    padding: 0px 0px;
+
+}
+.navlinks{
+    display: flex;
+    flex-direction: row;
+    gap : 30px
+}
+.navlinks li{
+    list-style: none;
+
+}
+.navlinks li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+#banner{
+    background-image: linear-gradient(to top,black,transparent,transparent),url(img/wallpaperflare-cropped.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right:0;
+    z-index: -1;
+}
+
+#banner  .container{
+    min-height:100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 40px 0px;
+}
+#banner .container h1{
+    font-size:50px ;
+    color: aliceblue;
+}
+#banner .container h2{
+    font-size:28px ;
+    color: aliceblue;
+}
+#mis{
+    position: relative;
+}
+#mis .vids{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+#mis .container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger;
+    color:white;
+}
+.container h3{
+    font-size: xx-large;
+}
+#mis p{
+    font-size: 23px;
+}
+/* focussss */
+#key{
+    background-image: url(img/sl_0210121_40570_58.jpg);
+    color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0px;
+    background-attachment: fixed;
+}
+.boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.box{background:rgba(255, 255, 255, 0.1);
+    backdrop-filter:blur(5px);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    }
+
+.box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+}
+
+.box img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.box .text{
+    padding: 15px;
+}
+.box .text h4{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: #29b6e5;
+}
+.box .text p{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 100;
+    padding-left: 10px;
+    position: relative;
+}
+.box .text p::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #25b2e0;
+    width: 2px;
+    height: 100%;
+
+}
+.box .text p::after{
+    content: "";
+    position: absolute;
+    bottom: 0  ;
+    left: 0;
+    height: 2px;
+    width: 100x;
+}
+#suck{
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0px;
+    gap: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#suck .vidss{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+
+}
+#suck h3{
+    padding-bottom: 10px;
+}
+.boxs .text{
+    font-size: larger;
+    text-align: justify;
+}
+.boxs .text p{
+    color: white;
+}
+.test{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.ims{
+    margin-top:  15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.ims img{
+    width: 400px;
+    margin: 10px;
+    height: 300px;
+    object-fit: cover;
+}
+.ims .cap p{
+    text-align: center;
+    font-size: larger;
+}
+.boxs .text{
+    color: black;
+}
+#contact {
+    min-height: 5vh;
+    color: white;
+    background-image: url(img/2620351.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0px;
+}
+#contact .container{
+    width: 100%;
+}
+#contact .container h3{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.pn{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+
+}
+.pn p a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.pn p{
+    text-align: center;
+    color: white
+}
+
+
+
+
+
